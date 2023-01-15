@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C339B81F-6C9A-440F-A4F1-3C082B5B72D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pokemon.WebAPI", "src\Pokemon.WebAPI\Pokemon.WebAPI.csproj", "{C55122EF-BE80-44D1-A7B1-9580A602BB5F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C55122EF-BE80-44D1-A7B1-9580A602BB5F} = {C339B81F-6C9A-440F-A4F1-3C082B5B72D4}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C55122EF-BE80-44D1-A7B1-9580A602BB5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C55122EF-BE80-44D1-A7B1-9580A602BB5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C55122EF-BE80-44D1-A7B1-9580A602BB5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C55122EF-BE80-44D1-A7B1-9580A602BB5F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
