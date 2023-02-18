@@ -8,5 +8,5 @@ public class PokemonDb : DbContext
     {
     }
 
-    public DbSet<global::Pokemon.WebAPI.Data.Pokemon> Pokemons => Set<global::Pokemon.WebAPI.Data.Pokemon>();
+    public DbSet<Pokemon> Pokemons => Set<Pokemon>();
 }

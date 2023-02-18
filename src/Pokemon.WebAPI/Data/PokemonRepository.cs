@@ -16,6 +16,18 @@ public class PokemonRepository : IPokemonRepository
         return _context.Pokemons.ToListAsync();
     }
 
+    public Task<List<Pokemon>> GetPokemonsAsync(string name)
+    {
+        return _context.Pokemons.Where(x => x.Name.Contains(name)).ToListAsync();
+    }
+
+    public Task<List<Pokemon>> GetPokemonsAsync(Information information)
+    {
+        return _context.Pokemons
+            .Where(x => x.Name.Contains(information.Name) && x.Description.Contains(information.Description))
+            .ToListAsync();
+    }
+
     public Task<Pokemon?> GetPokemonAsync(int pokemonId)
     {
         return _context.Pokemons.FirstOrDefaultAsync(x => x.Id == pokemonId);
@@ -51,7 +63,8 @@ public class PokemonRepository : IPokemonRepository
     }
 
     private bool _disposed;
-    protected virtual void Dispose(bool disposing)
+
+    private void Dispose(bool disposing)
     {
         if (!_disposed)
         {
